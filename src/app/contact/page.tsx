@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
+
 
 
 
@@ -8,17 +9,17 @@ const Contact = () => {
     <div>
 <Navbar/>
       {/* Contact Page */}
-      <section className="contact mt-20 lg:mt-0 py-12 bg-gray-50" id="contact">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="contact mt-20 lg:mt-0 py-12 bg-white" id="contact">
+        <div className="max-w-5xl mx-2 lg:mx-auto text-center">
           <h1 className="text-3xl font-bold text-gray-800">
             Contact <span className="text-[#ea1b48]">Me</span>
           </h1>
           <p className="text-gray-600 mt-4">
-            Feel free to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities.
-          </p>
+  Feel free to get in touch with me. I&apos;m always open to discussing new projects, creative ideas, or opportunities.
+</p>
         </div>
 
-        <form action="" className="max-w-4xl mx-auto mt-8">
+        <form action="" className="max-w-4xl mx-2 lg:mx-auto mt-8">
           <div className="flex flex-col lg:flex-row gap-6">
             {/* Input Fields */}
             <div className="flex flex-col w-full lg:w-1/2 gap-4">

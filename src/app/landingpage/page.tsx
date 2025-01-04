@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
+
 
 
 
 const Landing = () => {
   return (
-    <div className="bg-[#f6f7f9] min-h-screen">
+    <div className="bg-[#fdfdfd] min-h-screen">
       {/* Navbar */}
       <Navbar />
 

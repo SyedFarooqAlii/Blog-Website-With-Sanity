@@ -8,16 +8,29 @@ import Comment from './components/CommentSection';
 
 import { client } from '@/sanity/lib/client';
 
-import Landing from './components/landingpage';
+
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+
+
+import Landing from './landingpage/page';
+import Contact from './contact/page';
 import Webpage from './components/blogcard';
-import Contact from './components/contact';
+
+
+type Image = {
+  _type: string;
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+};
+
 
 type Post={
   title:string,
   summmary:string,
-  image:any,
+  image:Image,
   slug:string
 };
 
@@ -42,11 +55,11 @@ export default async function Home() {
   console.log('Fetched Posts:', posts);
 
   return (
-<>
+<div className='bg-[#fdfdfd]'>
 <Navbar/>
 <Landing/>
 
-<div className="flex flex-wrap items-center justify-center gap-4 p-4">
+<div className="flex mt-24 lg:mt-0 flex-wrap items-center justify-center gap-16 lg:gap-4 p-4">
       {posts.map((post: Post) => (
         <Webpage key={post.slug} post={post} />
       ))}
@@ -54,6 +67,6 @@ export default async function Home() {
     <Comment/>
     <Contact/>
     <Footer/>
-    </>
+    </div>
   );
 }

@@ -4,10 +4,20 @@ import Link from "next/link";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 
+type Image = {
+  _type: string;
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+};
+
+
+
 type Post={
     title:string,
     summmary:string,
-    image:any,
+    image:Image,
     slug:string
 };
 
@@ -16,6 +26,7 @@ const Webpage = ({ post }: { post: Post }) => {
     <div className="p-0 lg:p-6 bg-gray-50 min-h-auto flex items-center justify-center">
       <div className="max-w-md w-full">
         {/* Blog Post Card */}
+        
         <div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-gray-200">
           {/* Post Image */}
           {post.image ? (

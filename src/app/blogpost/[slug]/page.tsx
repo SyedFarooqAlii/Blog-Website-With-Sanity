@@ -5,12 +5,6 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import { components } from '@/app/components/Customstyle';
 
-
-
-
-
-
-
 interface Props {
   params: {
     slug: string;
@@ -77,10 +71,12 @@ export default async function Page({ params: { slug } }: Props) {
 
     {/* Blog Image */}
     <div className=''>
-      <img
+      <Image
         className="h-[200px] sm:h-[320px] w-full rounded-b-[8px] object-cover"
         src={urlFor(posts.image)}
         alt="Blog Cover"
+        height={200}
+        width={200}
       />
     </div>
 

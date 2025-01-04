@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Logo */}
         <div>
           <h1 className="text-[1.5rem] md:text-[2rem] font-bold tracking-wide">
-            SF'BLOG'S
+            SF BLOG&apos;S {/* Escape apostrophes */}
           </h1>
         </div>
 
