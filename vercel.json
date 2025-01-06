@@ -1,7 +1,4 @@
 {
-    "build": {
-      "ignoreBuildStep": true
-    },
     "routes":[
       {
         "src":"/",
