@@ -1,11 +1,15 @@
 {
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node",
-      "config": {
-        "buildCommand": "npm run build || true"  
+    "build": {
+      "ignoreBuildStep": true
+    },
+    "routes":[
+      {
+        "src":"/",
+        "app":"/"
+      },
+      {
+        "src":"/",
+        "app":"/"
       }
-    }
-  ]
-}
+    ]
+  }
