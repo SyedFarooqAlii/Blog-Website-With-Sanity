@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
 <Navbar/>
       {/* Contact Page */}
-      <section className="contact mt-20 lg:mt-0 py-12 bg-white" id="contact">
+      <section className="contact mt-20 lg:mt-16 py-12 bg-white" id="contact">
         <div className="max-w-5xl mx-2 lg:mx-auto text-center">
           <h1 className="text-3xl font-bold text-gray-800">
             Contact <span className="text-[#ea1b48]">Me</span>
